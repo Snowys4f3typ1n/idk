@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: "Georgia", "Times New Roman", serif;
+        max-width: 760px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: linear-gradient(135deg, #e6eef2 0%, #d8e9d9 100%);
+        color: #2f4b53;
+        position: relative;
+        overflow-x: hidden;
+      }
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 5rem;
+        pointer-events: none;
+        background-repeat: repeat-y;
+        background-image:
+          radial-gradient(circle at 2rem 4rem, rgba(102, 138, 115, 0.7), transparent 18%),
+          radial-gradient(circle at 2rem 10rem, rgba(102, 138, 115, 0.7), transparent 18%),
+          linear-gradient(180deg, transparent 0%, transparent 20%, rgba(102, 138, 115, 0.22) 20%, rgba(102, 138, 115, 0.22) 22%, transparent 22%, transparent 38%, rgba(102, 138, 115, 0.22) 38%, rgba(102, 138, 115, 0.22) 40%, transparent 40%, transparent 56%, rgba(102, 138, 115, 0.22) 56%, rgba(102, 138, 115, 0.22) 58%, transparent 58%);
+      }
+      body::before {
+        left: 0;
+        transform: scaleX(-1);
+      }
+      body::after {
+        right: 0;
+      }
+      .recipe-card {
+        background: rgba(255, 255, 250, 0.98);
+        border: 2px solid rgba(103, 148, 124, 0.72);
+        border-radius: 22px;
+        box-shadow: 0 12px 30px rgba(74, 104, 101, 0.16);
+        padding: 2rem 2.4rem;
+        position: relative;
+        z-index: 1;
+      }
+      h1 {
+        color: #3c5f68;
+        font-size: 1.95rem;
+        letter-spacing: 0.08em;
+        margin: 0.4rem 0 0.2rem;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      h2 {
+        color: #3c5f68;
+        font-size: 1.1rem;
+        letter-spacing: 0.06em;
+        margin-bottom: 0.75rem;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      hr {
+        border: none;
+        border-top: 2px dotted rgba(103, 148, 124, 0.8);
+        margin: 0.75rem 0 1.2rem;
+      }
+      li {
+        margin: 0.4rem 0;
+        line-height: 1.65;
+      }
+      p {
+        text-align: center;
+        margin: 1rem 0;
+        color: #5f7d7a;
+        font-style: italic;
+      }
+      ul {
+        padding-left: 1.2rem;
+        list-style-type: circle;
+      }
+      ol {
+        padding-left: 1.2rem;
+      }
+      ol li {
+        margin-bottom: 1rem;
+      }
+      .subtitle {
+        text-align: center;
+        margin-top: -0.4rem;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        color: #5f7d7a;
+      }
+      .tips {
+        background: rgba(225, 236, 228, 0.95);
+        border: 1px solid rgba(103, 148, 124, 0.6);
+        border-radius: 16px;
+        padding: 1.25rem 1.4rem;
+        margin-top: 1.6rem;
+      }
+      .tips h2 {
+        color: #3c5f68;
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        text-align: center;
+      }
+      .tips ul {
+        list-style-type: disc;
+        padding-left: 1.4rem;
+      }
+      .tips li {
+        margin: 0.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="recipe-card">
+      <h1>Recipe Ingredients</h1>
+      <p class="subtitle">A cozy homemade pizza for a family supper</p>
+      <hr>
+      <ul>
+        <li>Warm water: 1 cup (105–115°F)</li>
+        <li>Sugar: 1 tsp</li>
+        <li>Active dry yeast: 1 packet (approx. 2.25 tsp)</li>
+        <li>All-purpose or bread flour: 2.5 cups</li>
+        <li>Olive oil: 2 tbsp</li>
+        <li>Salt: 1 tsp</li>
+      </ul>
+      <p>____________</p>
+      <ul>
+        <li>Pizza sauce: 1/2 cup</li>
+        <li>Shredded mozzarella cheese: 1.5 cups</li>
+        <li>Grated parmesan cheese: 1/4 cup</li>
+        <li>Italian seasoning: 1.5 tsp</li>
+      </ul>
+
+      <h1>Steps</h1>
+      <hr>
+      <ol>
+        <li>Activate the Yeast:<br>
+        In a medium bowl, combine the warm water, sugar, and yeast. Let it sit for 5 to 10 minutes until it becomes froamy.</li>
+        <br>
+        <li>Mix the Dough: <br>
+        Stir in the flour, olive oil, and salt until a smooth dough forms. Knead lightly by hand or with a mixer hook for about 5 minutes, then let it rest for 5 minutes.</li>
+        <br>
+        <li>Preheat the Oven: <br>
+        Turn your oven up to 500°F (260°C). If you are using a specialized baking tool like a Pizza Stone or a preheated baking sheet, place it inside the oven now</li>
+        <br>
+        <li>Shape the Crust: <br>
+        On a lightly floured surface, pat or roll the dough into a 12-inch circle. Transfer it onto a piece of parchment paper or a greased baking sheet.</li>
+        <br>
+        <li>Assemble Top: <br>
+        Spread the pizza sauce evenly over the dough, leaving a small border for the crust. Sprinkle the mozzarella, parmesan, and Italian seasoning over the top.</li>
+        <br>
+        <li>Bake:<br>
+        Bake for 10 to 15 minutes until the crust edges are a deep golden brown and the cheese is hot and bubbling. Let cool slightly before slicing.</li>
+      </ol>
+      <hr>
+    </div>
+  </body>
+</html>
